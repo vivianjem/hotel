@@ -711,6 +711,7 @@ footer label {
 }
 
 /*--------footer---------*/
+
 @media only screen and (max-width:768px) {
   .home {
     color: #fff;
