@@ -711,67 +711,112 @@ footer label {
 }
 
 /*--------footer---------*/
-/*--------手機響應---------*/
 @media only screen and (max-width:768px) {
   .home {
+    color: #fff;
     height: 50vh;
   }
+
   .home img {
     width: 100%;
     height: 50vh;
   }
+
   .left, .right {
     width: 100%;
   }
+
   .book h1 {
     margin-bottom: 20px;
   }
-  .container.flex, .book .flex_space {
+
+  .container.flex,
+  .book .flex_space {
     flex-direction: column;
   }
+
   .book .grid {
     grid-template-columns: repeat(3, 1fr);
   }
+
   .counter .grid {
     grid-template-columns: repeat(2, 1fr);
   }
+
   .owl-carousel .owl-nav .owl-prev {
     left: 80%;
   }
+
   .gallery .owl-nav .owl-prev {
     left: 75%;
   }
+
   .rooms .owl-nav .owl-prev,
   .rooms .owl-nav .owl-next {
     top: -30%;
   }
+
   .gallery .owl-nav .owl-prev,
   .gallery .owl-nav .owl-next {
     top: -80%;
   }
+
   .services .flex_space {
     flex-direction: column;
   }
+
   .Customer {
     height: 60vh;
   }
+
   .Customer .container {
     max-width: 80%;
   }
+
   .owl-carousel2 .owl-dots {
     bottom: 0;
     left: 44.5%;
   }
+
   .news .content.flex {
     flex-direction: column;
   }
-  .news .left, .news .right {
+
+  .news .left {
+    padding: 30px 0;
     width: 100%;
   }
-  .newsletter .container {
-    padding: 40px 30px;
-    margin-bottom: 20px;
+
+  .news .right {
+    width: 100%;
   }
+
+  .newsletter {
+    position: relative;
+    background: #7fc142;
+  }
+
+  .newsletter .container {
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 40px 30px;
+    position: relative;
+  }
+
+  .newsletter .flex_space {
+    flex-direction: column;
+  }
+
+  .newsletter input:nth-last-child(2) {
+    margin: 20px 0;
+    width: 100%;
+  }
+
+  .newsletter input:nth-last-child(1) {
+    margin: 0;
+  }
+
   footer .grid {
     grid-template-columns: repeat(1, 1fr);
   }
