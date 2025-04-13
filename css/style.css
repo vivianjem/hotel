@@ -60,7 +60,7 @@ button {
   margin: auto;
 }
 
-/*------- Header -------*/
+/*--------header---------*/
 header {
   height: 10vh;
   line-height: 10vh;
@@ -115,13 +115,19 @@ header .navlinks span {
     text-align: center;
     z-index: 9;
   }
+
   header ul li {
     display: block;
   }
-  header ul li a,
+
+  header ul li a {
+    color: white;
+  }
+
   header i {
     color: white;
   }
+
   header .navlinks span {
     color: black;
     display: block;
@@ -131,17 +137,16 @@ header .navlinks span {
   }
 }
 
-/*------- Home -------*/
+/*--------header---------*/
+/*--------home---------*/
 .home {
   height: 100vh;
   color: #fff;
-  position: relative;
 }
 
 .home img {
   width: 100%;
   height: 100vh;
-  object-fit: cover;
 }
 
 .home .text {
@@ -170,7 +175,7 @@ header .navlinks span {
   top: 40%;
   height: 50px;
   width: 50px;
-  background: rgba(0,0,0,0.5) !important;
+  background: rgba(0, 0, 0, 0.5) !important;
   color: #fff;
 }
 
@@ -182,7 +187,8 @@ header .navlinks span {
   right: 0;
 }
 
-/*------- Book -------*/
+/*--------home---------*/
+/*--------book---------*/
 .grid {
   display: grid;
   grid-template-columns: repeat(5, 1fr);
@@ -201,9 +207,12 @@ input {
   color: #fff;
 }
 
+h1 {
+  font-family: serif;
+}
+
 .book h1 {
   font-size: 28px;
-  font-family: serif;
 }
 
 .book h1 span {
@@ -214,12 +223,13 @@ input {
   padding: 20px;
 }
 
-.book input[type="submit"] {
+.book input:nth-last-child(1) {
   background: #7fc142;
   color: #fff;
 }
 
-/*------- About -------*/
+/*--------book---------*/
+/*--------about---------*/
 .left, .right {
   width: 50%;
   padding: 30px;
@@ -253,6 +263,14 @@ input {
   top: 55px;
 }
 
+.about {
+  position: relative;
+}
+
+.about .left {
+  margin-top: 30px;
+}
+
 .about p {
   font-size: 15px;
 }
@@ -261,9 +279,10 @@ input {
   margin: 30px 0;
 }
 
-/*------- Counter -------*/
+/*--------about---------*/
+/*--------counter---------*/
 .counter {
-  background-image: url("/images/background-1.png");
+  background-image: url("../images/background-1.png");
   background-size: cover;
   background-repeat: no-repeat;
   height: 30vh;
@@ -290,13 +309,14 @@ input {
   border: none;
 }
 
-/*------- Rooms -------*/
+/*--------counter---------*/
+/*--------rooms---------*/
 .rooms {
   position: relative;
 }
 
 .rooms .text {
-  border: 1px solid rgba(0,0,0,0.1);
+  border: 1px solid rgba(0, 0, 0, 0.1);
   border-top: none;
   padding: 30px;
 }
@@ -304,7 +324,8 @@ input {
 .rooms i {
   font-size: 12px;
   color: #fbb234;
-  margin: 15px 0 15px 5px;
+  margin: 15px 0;
+  margin-right: 5px;
 }
 
 .rooms p {
@@ -314,6 +335,7 @@ input {
 
 .rooms h3 {
   font-size: 30px;
+  line-height: 20px;
   margin-left: 20px;
   font-weight: 500;
   color: #7fc142;
@@ -325,7 +347,30 @@ input {
   color: #000;
 }
 
-/*------- Gallery -------*/
+.owl-carousel1 .owl-nav .owl-prev,
+.owl-carousel1 .owl-nav .owl-next {
+  position: absolute;
+  top: -20%;
+  height: 50px;
+  width: 50px;
+  background: #7fc142 !important;
+}
+
+.owl-carousel1 .owl-nav .owl-prev i,
+.owl-carousel1 .owl-nav .owl-next i {
+  color: #fff;
+}
+
+.owl-carousel1 .owl-nav .owl-prev {
+  left: 90%;
+}
+
+.owl-carousel1 .owl-nav .owl-next {
+  right: 0;
+}
+
+/*--------rooms---------*/
+/*--------gallery---------*/
 .gallery {
   position: relative;
 }
@@ -344,7 +389,7 @@ input {
   position: absolute;
   top: 0;
   left: 0;
-  background: rgba(126,193,65,0.86);
+  background: rgba(126, 193, 65, 0.86);
   width: 255px;
   height: 251px;
   z-index: 2;
@@ -383,15 +428,37 @@ input {
   cursor: pointer;
 }
 
-/*------- Services -------*/
+.gallery .owl-nav .owl-prev {
+  left: 85%;
+}
+
+.gallery .owl-nav .owl-next {
+  right: 5%;
+}
+
+.gallery .owl-nav .owl-next,
+.gallery .owl-nav .owl-prev {
+  top: -40%;
+}
+
+/*--------gallery---------*/
+/*--------services---------*/
+.services {
+  position: relative;
+}
+
 .grid2 {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   grid-gap: 30px;
 }
 
+.services .left {
+  padding: 30px 0;
+}
+
 .services .box {
-  border: 1px solid rgba(0,0,0,0.1);
+  border: 1px solid rgba(0, 0, 0, 0.1);
   text-align: center;
   transition: 0.5s;
   padding: 20px;
@@ -411,8 +478,13 @@ input {
 .services h3 {
   font-size: 20px;
   font-weight: 400;
-  margin-top: 20px;
+  margin-top: 20p;
   transition: 0.5s;
+}
+
+.services img {
+  width: 100%;
+  height: 100%;
 }
 
 .services .box:hover {
@@ -426,9 +498,10 @@ input {
   color: #fff;
 }
 
-/*------- Customer -------*/
+/*--------services---------*/
+/*--------Customer---------*/
 .Customer {
-  background-image: url("/images/background-2.png");
+  background-image: url("../images/background-2.png");
   background-size: cover;
   background-repeat: no-repeat;
   height: 70vh;
@@ -448,7 +521,7 @@ input {
 .Customer i {
   width: 100px;
   height: 100px;
-  background: rgba(126,193,64,0.57);
+  background: rgba(126, 193, 64, 0.57);
   line-height: 100px;
   border-radius: 50%;
   font-size: 50px;
@@ -468,11 +541,18 @@ input {
   font-size: 15px;
 }
 
-/*------- Owl Carousel 2 Dots -------*/
 .owl-carousel2 .owl-dots {
   position: absolute;
   bottom: 70px;
   left: 46.6%;
+}
+
+.owl-carousel2 .owl-dots i {
+  color: #7fc142;
+}
+
+.owl-carousel2 .owl-dots i:hover button {
+  color: #7fc142 !important;
 }
 
 .owl-carousel2 span {
@@ -485,9 +565,21 @@ input {
   border: 2px solid #7fc142;
 }
 
-/*------- News -------*/
+/*--------Customer---------*/
+/*--------news---------*/
 .news {
   position: relative;
+}
+
+.news i {
+  color: #7fc142;
+  text-transform: capitalize;
+  font-size: 18px;
+}
+
+.news label {
+  margin-top: 12px;
+  margin-right: 20px;
 }
 
 .news .left {
@@ -505,12 +597,20 @@ input {
 
 .news .items p {
   padding-top: 20px;
-  border-top: 1px solid rgba(0,0,0,0.2);
+  border-top: 1px solid rgba(0, 0, 0, 0.2);
 }
 
 .news .box {
-  border-bottom: 1px solid rgba(0,0,0,0.2);
+  border-bottom: 1px solid rgba(0, 0, 0, 0.2);
   padding: 40px 0;
+}
+
+.news .box:nth-child(1) {
+  padding-top: 0;
+}
+
+.news .box:nth-last-child(1) {
+  border-bottom: none;
 }
 
 .news .box img {
@@ -519,10 +619,11 @@ input {
 }
 
 .news .stext {
-  padding-left: 20px;
+  padding: 0 0 0 20px;
 }
 
-/*------- Newsletter -------*/
+/*--------news---------*/
+/*--------newsletter---------*/
 .newsletter {
   position: relative;
 }
@@ -530,10 +631,14 @@ input {
 .newsletter .container {
   background: #7fc142;
   padding: 40px 30px;
-  margin-bottom: 40px;
+  position: absolute;
+  top: -70px;
+  left: 8%;
+  width: 100%;
 }
 
 .newsletter h1 {
+  width: 100%;
   font-size: 30px;
   color: #fff;
   margin-top: 10px;
@@ -543,12 +648,12 @@ input {
   padding: 20px;
 }
 
-.newsletter input[type="text"]:nth-last-child(2) {
+.newsletter input:nth-last-child(2) {
   width: 80%;
-  background: rgba(255,255,255,0.4);
+  background: rgba(255, 255, 255, 0.4);
 }
 
-.newsletter input[type="text"]:nth-last-child(1) {
+.newsletter input:nth-last-child(1) {
   margin-left: 20px;
   width: 30%;
   text-align: center;
@@ -556,16 +661,20 @@ input {
   text-transform: uppercase;
 }
 
-/*------- Footer -------*/
+/*--------newsletter---------*/
+/*--------footer---------*/
 footer {
   background: #282834;
   color: #b6b7b9;
   padding: 10% 0 5% 0;
-  display: grid;
+}
+
+footer .grid {
   grid-template-columns: 6fr 3fr 3fr;
 }
 
 footer p {
+  color: #b6b7b9;
   font-size: 15px;
   line-height: 25px;
 }
@@ -586,24 +695,30 @@ footer li {
 
 footer i {
   color: #7fc142;
+  margin: 20px 0;
   margin-right: 20px;
+}
+
+footer label {
+  margin: 20px 0;
 }
 
 .legal {
   padding: 15px 0;
   background: #282834;
   color: #b6b7b9;
-  border-top: 1px solid rgba(255,255,255,0.2);
+  border-top: 1px solid rgba(255, 255, 255, 0.2);
 }
 
-/*------- 手機響應 -------*/
+/*--------footer---------*/
+/*--------手機響應---------*/
 @media only screen and (max-width:768px) {
   .home {
     height: 50vh;
   }
   .home img {
+    width: 100%;
     height: 50vh;
-    object-fit: cover;
   }
   .left, .right {
     width: 100%;
@@ -657,7 +772,7 @@ footer i {
     padding: 40px 30px;
     margin-bottom: 20px;
   }
-  footer {
-    grid-template-columns: 1fr;
+  footer .grid {
+    grid-template-columns: repeat(1, 1fr);
   }
 }
