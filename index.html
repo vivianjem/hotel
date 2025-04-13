@@ -3,22 +3,21 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <!-- 若你的網站部署在根目錄，可不使用 base 標籤 -->
-  <!-- <base href="/你的子目錄/"> -->
+  <!-- 若網站部署於根目錄，可直接使用絕對路徑 -->
   <title>Crowny Hotel</title>
-  <link rel="stylesheet" href="./css/style.css">
+  <link rel="stylesheet" href="/css/style.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.css" integrity="sha512-UTNP5BXLIptsaj5WdKFrkFov94lDx+eBvbKyoe1YAfjeRPC+gT5kyZ10kOHCfNZqEui1sxmqvodNUx3KbuYI/A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css" integrity="sha512-sMXtMNL1zRzolHYKEujM2AqCLUR9F2C4/05cdbxjjLSRvMQIciEPCQZo++nk7go3BtSuK9kfa/s+a4f4i5pLkw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
   <script src="https://code.jquery.com/jquery-1.12.4.min.js" integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ=" crossorigin="anonymous"></script>
 </head>
 
 <body>
-  <!-- header -->
+  <!-- Header -->
   <header>
     <div class="content flex_space">
       <div class="logo">
-        <!-- 確認 images/logo.png 是否存在，檔名大小寫一定要一致 -->
-        <img src="images/logo.png" alt="Logo">
+        <!-- 使用絕對路徑，請確認 /images/logo.png 存在 -->
+        <img src="/images/logo.png" alt="Logo">
       </div>
       <div class="navlinks">
         <ul id="menulist">
@@ -53,7 +52,7 @@
     <div class="content">
       <div class="owl-carousel owl-theme">
         <div class="item">
-          <img src="images/banner-1.png" alt="Banner 1">
+          <img src="/images/banner-1.png" alt="Banner 1">
           <div class="text">
             <h1>Spend Your Holiday</h1>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed do eiusmtem por incid.</p>
@@ -64,7 +63,7 @@
           </div>
         </div>
         <div class="item">
-          <img src="images/banner-2.png" alt="Banner 2">
+          <img src="/images/banner-2.png" alt="Banner 2">
           <div class="text">
             <h1>Spend Your Holiday</h1>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed do eiusmtem por incid.</p>
@@ -75,7 +74,7 @@
           </div>
         </div>
         <div class="item">
-          <img src="images/banner-3.png" alt="Banner 3">
+          <img src="/images/banner-3.png" alt="Banner 3">
           <div class="text">
             <h1>Spend Your Holiday</h1>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed do eiusmtem por incid.</p>
@@ -134,7 +133,7 @@
         <button class="primary-btn">ABOUT US</button>
       </div>
       <div class="right">
-        <img src="images/about.png" alt="About">
+        <img src="/images/about.png" alt="About">
       </div>
     </div>
   </section>
@@ -177,7 +176,7 @@
         <div class="owl-carousel owl-carousel1 owl-theme">
           <div class="items">
             <div class="image">
-              <img src="images/room-1.png" alt="Room 1">
+              <img src="/images/room-1.png" alt="Room 1">
             </div>
             <div class="text">
               <h2>Suporior Rooms</h2>
@@ -195,7 +194,7 @@
               </div>
             </div>
           </div>
-          <!-- 可依此格式增補其他房型項目 -->
+          <!-- 請依需求增補其他房型項目 -->
         </div>
       </div>
     </div>
@@ -229,14 +228,14 @@
       <div class="owl-carousel owl-carousel1 owl-theme">
         <div class="items">
           <div class="img">
-            <img src="images/gallery-1.png" alt="Gallery 1">
+            <img src="/images/gallery-1.png" alt="Gallery 1">
           </div>
           <div class="overlay">
             <span class="fa fa-plus"></span>
             <h3>Photo Title Here.</h3>
           </div>
         </div>
-        <!-- 依序增補其他 gallery 項目 -->
+        <!-- 請依需求增補其他 gallery 項目 -->
       </div>
     </div>
   </section>
@@ -295,7 +294,7 @@
           </div>
         </div>
         <div class="right">
-          <img src="images/service.png" alt="Service">
+          <img src="/images/service.png" alt="Service">
         </div>
       </div>
     </div>
@@ -353,7 +352,7 @@
         <div class="left grid2">
           <div class="items">
             <div class="image">
-              <img src="images/blog-1.png" alt="News 1">
+              <img src="/images/blog-1.png" alt="News 1">
             </div>
             <div class="text">
               <h2>Finibus bonorum malorm.</h2>
@@ -369,7 +368,7 @@
           </div>
           <div class="items">
             <div class="image">
-              <img src="images/blog-2.png" alt="News 2">
+              <img src="/images/blog-2.png" alt="News 2">
             </div>
             <div class="text">
               <h2>Finibus bonorum malorm.</h2>
@@ -387,7 +386,7 @@
         <div class="right">
           <div class="box flex">
             <div class="img">
-              <img src="images/blog-s1.png" alt="News Sidebar 1">
+              <img src="/images/blog-s1.png" alt="News Sidebar 1">
             </div>
             <div class="stext">
               <h2>Etiam Vel Nequ</h2>
@@ -396,7 +395,7 @@
           </div>
           <div class="box flex">
             <div class="img">
-              <img src="images/blog-s2.png" alt="News Sidebar 2">
+              <img src="/images/blog-s2.png" alt="News Sidebar 2">
             </div>
             <div class="stext">
               <h2>Etiam Vel Nequ</h2>
@@ -405,7 +404,7 @@
           </div>
           <div class="box flex">
             <div class="img">
-              <img src="images/blog-s3.png" alt="News Sidebar 3">
+              <img src="/images/blog-s3.png" alt="News Sidebar 3">
             </div>
             <div class="stext">
               <h2>Etiam Vel Nequ</h2>
@@ -430,7 +429,7 @@
   <footer id="contact">
     <div class="container grid">
       <div class="box">
-        <img src="images/logo-2.png" alt="Logo 2">
+        <img src="/images/logo-2.png" alt="Logo 2">
         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
         <div class="icon">
           <i class="fa fa-facebook-f"></i>
