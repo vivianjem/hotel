@@ -170,7 +170,7 @@ header .navlinks span {
   top: 40%;
   height: 50px;
   width: 50px;
-  background: rgba(0, 0, 0, 0.5) !important;
+  background: rgba(0,0,0,0.5) !important;
   color: #fff;
 }
 
@@ -263,7 +263,7 @@ input {
 
 /*------- Counter -------*/
 .counter {
-  background-image: url("../images/background-1.png");
+  background-image: url("/images/background-1.png");
   background-size: cover;
   background-repeat: no-repeat;
   height: 30vh;
@@ -428,7 +428,7 @@ input {
 
 /*------- Customer -------*/
 .Customer {
-  background-image: url("../images/background-2.png");
+  background-image: url("/images/background-2.png");
   background-size: cover;
   background-repeat: no-repeat;
   height: 70vh;
